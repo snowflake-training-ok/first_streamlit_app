@@ -57,7 +57,7 @@ if streamlit.button('Get Fruit Load List'):
   my_data_rows = get_fruit_load_list()
   streamlit.dataframe(my_data_rows)
 #don't run anything past here while we troubleshoot
-streamlist.stop() 
+streamlit.stop() 
   
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 #streamlit.text(fruityvice_response.json()) #just writes the data to the screeen
