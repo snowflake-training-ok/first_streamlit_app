@@ -70,7 +70,7 @@ if streamlit.button('Add a fruit to the List'):
   streamlit.text(back_from_function)
 
 #don't run anything past here while we troubleshoot
-#streamlit.stop() 
+streamlit.stop() 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 #streamlit.text(fruityvice_response.json()) #just writes the data to the screeen
 # take the json version of the response and normalize it
